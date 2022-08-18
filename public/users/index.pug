@@ -1,0 +1,8 @@
+extends ../layout.pug
+
+block content
+  h2 Users
+  ul
+    for i in rows 
+      li= i.uname + ' created at '+ i.createdAt
+  a(href='users/new') Create User

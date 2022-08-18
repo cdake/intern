@@ -1,0 +1,8 @@
+extends layout.pug 
+
+block content
+  h2.text-center Login
+  form(action="/login", method='post')
+    include _form_fields.pug
+    button(type='submit', name='submit') Submit
+  p #{data}

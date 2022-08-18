@@ -1,0 +1,13 @@
+extends layout.pug 
+block content
+    .row
+      h1 Welcome Motherfucker
+      .row.g-3.align-items-center
+        form(action="#", mehtod='get')
+          include _form_fields.pug
+          .col-auto
+            button(type="Submit", class="btn btn-primary") Submit
+      if {username}
+        p #{username}
+      else
+        p Anonymous
